@@ -204,8 +204,13 @@ updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 //Iterate with JavaScript While Loops
 const myArray = [];
 let i = 5;
+while (i >= 0) {
+   myArray.push(i);
+   i--;
+}
 
-while( i >=0 ){
-  myArray.push(i);
-  i--;
+//Iterate with JavaScript For Loops
+const myArray = [];
+for (let i = 1; i < 6; i++) {
+   myArray.push(i);
 }
