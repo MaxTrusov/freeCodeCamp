@@ -79,7 +79,6 @@ delete myDog.tails;
 function phoneticLookup(val) {
    let result = "";
 
-   // Only change code below this line
    const lookup = {
       "alpha": "Adams",
       "bravo": "Boston",
@@ -90,11 +89,10 @@ function phoneticLookup(val) {
    }
    result = lookup[val];
 
-   // Only change code above this line
    return result;
 }
 phoneticLookup("charlie");
- 
+
 // Manipulating Complex Objects
 function checkObj(obj, checkProp) {
    if (obj.hasOwnProperty(checkProp)) {
@@ -102,5 +100,44 @@ function checkObj(obj, checkProp) {
    } else {
       return "Not Found";
    }
-
 }
+
+//Manipulating Complex Objects
+const myMusic = [
+   {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+         "CD",
+         "8T",
+         "LP"
+      ],
+      "gold": true
+   },
+   {
+      "artist": "Bob Marley",
+      "title": "Solder",
+      "release_year": 1973,
+      "formats": [
+         "CD",
+         "LP"
+      ],
+      "gold": false
+   },
+];
+
+//Accessing Nested Objects
+const myStorage = {
+   "car": {
+      "inside": {
+         "glove box": "maps",
+         "passenger seat": "crumbs"
+      },
+      "outside": {
+         "trunk": "jack"
+      }
+   }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
