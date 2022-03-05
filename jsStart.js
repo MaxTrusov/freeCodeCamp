@@ -322,3 +322,10 @@ lookUpProfile("Akira", "likes");
 function randomFraction() {
    return 1 + Math.random();
 }
+
+
+//Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
+   return Math.floor(Math.random() * 10);
+}
+
