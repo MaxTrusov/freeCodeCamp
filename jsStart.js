@@ -345,8 +345,30 @@ function convertToInteger(str) {
 }
 convertToInteger("10011");
 
-//
+//Use the Conditional (Ternary) Operator
 function checkEqual(a, b) {
    return a == b ? 'Equal' : 'Not Equal';
 }
 checkEqual(1, 2);
+
+
+//Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+   return (num > 0) ? 'positive'
+      : (num < 0) ? 'negative'
+         : 'zero'
+}
+checkSign(10);
+
+
+// Use Recursion to Create a Countdown 
+function countdown(n) {
+   return n < 1 ? [] : [n].concat(countdown(n - 1));
+}
+
+//Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+   return startNum === endNum
+      ? [startNum]
+      : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+};
