@@ -202,28 +202,36 @@ function updateRecords(records, id, prop, value) {
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 //Iterate with JavaScript While Loops
-const myArray0 = [];
+const myArray = [];
 let i = 5;
 while (i >= 0) {
    myArray.push(i);
    i--;
 }
 
-//Iterate with JavaScript For Loops
-const myArray1 = [];
+// //Iterate with JavaScript For Loops
+// const myArray1 = [];
 for (let i = 1; i < 6; i++) {
    myArray.push(i);
 }
 
-//Iterate Odd Numbers With a For Loop
-const myArray2 = [];
+// //Iterate Odd Numbers With a For Loop
+// const myArray2 = [];
 for (let i = 1; i < 10; i += 2) {
    myArray.push(i);
 }
 
 
 //Count Backwards With a For Loop
-const myArray = [];
+// const myArray = [];
 for (let i = 9; i > 0; i -= 2) {
    myArray.push(i);
+}
+
+
+//Iterate Through an Array with a For Loop
+// const myArr = [2, 3, 4, 5, 6];
+let total = 0;
+for (let i = 0; i < myArr.length; i++){
+  total += myArr[i];
 }
