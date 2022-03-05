@@ -251,4 +251,14 @@ function multiplyAll(arr) {
 
 }
 
+
+//Iterate with JavaScript Do...While Loops
+const myArray1 = [];
+let a = 10;
+
+do {
+   myArray1.push(i);
+   a++;
+} while (a < 10);
+
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
