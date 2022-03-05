@@ -22,7 +22,7 @@ function cc(card) {
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 
-const myDog = {
+const myDog1 = {
    // Only change code below this line
    "name": "Bim",
    legs: 10,
@@ -42,7 +42,7 @@ const hatValue = testObj.hat;
 const shirtValue = testObj.shirt;
 
 // Setup
-const testObj = {
+const testObj1 = {
    "an entree": "hamburger",
    "my side": "veggies",
    "the drink": "water"
@@ -52,7 +52,7 @@ const entreeValue = testObj["an entree"];
 const drinkValue = testObj["the drink"];
 
 // Setup
-const testObj = {
+const testObj2 = {
    12: "Namath",
    16: "Montana",
    19: "Unitas"
@@ -202,7 +202,7 @@ function updateRecords(records, id, prop, value) {
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 //Iterate with JavaScript While Loops
-const myArray = [];
+const myArray0 = [];
 let i = 5;
 while (i >= 0) {
    myArray.push(i);
@@ -210,13 +210,13 @@ while (i >= 0) {
 }
 
 //Iterate with JavaScript For Loops
-const myArray = [];
+const myArray1 = [];
 for (let i = 1; i < 6; i++) {
    myArray.push(i);
 }
 
 //Iterate Odd Numbers With a For Loop
-const myArray = [];
+const myArray2 = [];
 for (let i = 1; i < 10; i += 2) {
    myArray.push(i);
 }
