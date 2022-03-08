@@ -70,3 +70,13 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 
 //Set Default Parameters for Your Functions
 const increment = (number, value = 1) => number + value;
+
+// Use the Rest Parameter with Function Parameters
+const sum = (x, y, z) => {
+   const args = [x, y, z];
+   return args.reduce((a, b) => a + b, 0);
+}
+
+const sum1 = (...args) => {
+   return args.reduce((a, b) => a + b, 0);
+}
