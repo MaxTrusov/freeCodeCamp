@@ -80,3 +80,11 @@ const sum = (x, y, z) => {
 const sum1 = (...args) => {
    return args.reduce((a, b) => a + b, 0);
 }
+
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+arr2 = [...arr1]; 
+
+console.log(arr2);
