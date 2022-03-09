@@ -110,3 +110,13 @@ const HIGH_TEMPERATURES_1 = {
 
 const { today: highToday } = HIGH_TEMPERATURES_1;
 const { tomorrow: highTomorrow } = HIGH_TEMPERATURES_1;
+
+//C Assignment to Assign Variables from Nested Objects
+const LOCAL_FORECAST = {
+   yesterday: { low: 61, high: 75 },
+   today: { low: 64, high: 77 },
+   tomorrow: { low: 68, high: 80 }
+};
+
+const { today: { low: lowToday } } = LOCAL_FORECAST;
+const { today: { high: highToday_1 } } = LOCAL_FORECAST;
