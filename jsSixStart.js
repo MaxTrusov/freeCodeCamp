@@ -159,10 +159,35 @@ const result = {
 };
 function makeList(arr) {
    const failureItems = [];
-   for(let i = 0; i < arr.length; i++){
+   for (let i = 0; i < arr.length; i++) {
       failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
    }
    return failureItems;
 }
-
 const failuresList = makeList(result.failure);
+
+
+//Write Concise Object Literal Declarations Using Object Property Shorthand
+const createPerson = (name, age, gender) => {
+   return {
+      name: name,
+      age: age,
+      gender: gender
+   };
+};
+
+const createPerson_1 = (name, age, gender) => ({ name, age, gender });
+
+//Write Concise Declarative Functions with ES6
+const bicycle = {
+   gear: 2,
+   // setGear: function (newGear) {
+   //    this.gear = newGear;
+   // }
+   setGear(newGear) {
+      this.gear = newGear;
+   }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
