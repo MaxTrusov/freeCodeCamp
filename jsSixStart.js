@@ -247,3 +247,8 @@ export default function subtract(x, y) {
 //Import a Default Export
 import subtract from "./index.js";
 subtract(7,4);
+
+//Create a JavaScript Promise
+const makeServerRequest = new Promise((resolve, reject) => {
+
+});
