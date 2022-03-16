@@ -264,3 +264,22 @@ const makeServerRequest_1 = new Promise((resolve, reject) => {
       reject("Data not received");
    }
 });
+
+
+//Handle a Fulfilled Promise with then
+const makeServerRequest_2 = new Promise((resolve, reject) => {
+   let responseFromServer = true;
+
+   if (responseFromServer) {
+      resolve("We got the data");
+   } else {
+      reject("Data not received");
+   }
+});
+
+makeServerRequest_2.then(result => {
+   console.log(result);
+});
+
+
+
