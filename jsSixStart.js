@@ -227,7 +227,7 @@ export { uppercaseString, lowercaseString };
 
 
 // Reuse JavaScript Code Using import
-import {uppercaseString, lowercaseString}  from './index.js';
+import { uppercaseString, lowercaseString } from './index.js';
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
@@ -238,3 +238,8 @@ import * as stringFunctions from "./string_functions.js";
 
 stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
+
+// Create an Export Fallback with export default
+export default function subtract(x, y) {
+   return x - y;
+}
