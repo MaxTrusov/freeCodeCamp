@@ -234,7 +234,7 @@ lowercaseString("WORLD!");
 
 
 // Use * to Import Everything from a File
-import * as stringFunctions from "./string_functions.js";
+import * as stringFunctions from "./index.js";
 
 stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
@@ -243,3 +243,7 @@ stringFunctions.lowercaseString("WORLD!");
 export default function subtract(x, y) {
    return x - y;
 }
+
+//Import a Default Export
+import subtract from "./index.js";
+subtract(7,4);
