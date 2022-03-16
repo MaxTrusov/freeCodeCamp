@@ -282,4 +282,24 @@ makeServerRequest_2.then(result => {
 });
 
 
+//Handle a Rejected Promise with catch
+const makeServerRequest_3 = new Promise((resolve, reject) => {
+   let responseFromServer = false;
+
+   if (responseFromServer) {
+      resolve("We got the data");
+   } else {
+      reject("Data not received");
+   }
+});
+
+makeServerRequest_3.catch(error => {
+   console.log(error);
+});
+
+
+
+
+
+
 
