@@ -29,3 +29,19 @@ let result_4 = extractStr.match(codingRegex);
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi;
 let result_5 = twinkleStar.match(starRegex);
+
+
+//Match Anything with Wildcard Period
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./; 
+let result_6 = unRegex.test(exampleStr);
+
+//Match Single Character with Multiple Possibilities
+let quoteSample_1 = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi;
+let result_7 = quoteSample.match(vowelRegex);
+
+// Match Letters of the Alphabet
+let quoteSample_2 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result_8 = quoteSample.match(alphabetRegex); 
