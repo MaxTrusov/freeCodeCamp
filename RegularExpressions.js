@@ -50,3 +50,8 @@ let result_8 = quoteSample.match(alphabetRegex);
 let quoteSample_3 = "Blueberry 3.141592653s are delicious.";
 let myRegex_1 = /[h-s2-6]/gi;
 let result_9 = quoteSample.match(myRegex_1);
+
+// Match Single Characters Not Specified
+let quoteSample = "3 blind mice.";
+let myRegex_2 = /[^0-9aeiou]/gi;
+let result_10 = quoteSample.match(myRegex_2);
