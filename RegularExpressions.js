@@ -43,5 +43,27 @@ let result_7 = quoteSample.match(vowelRegex);
 
 // Match Letters of the Alphabet
 let quoteSample_2 = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi; // Change this line
+let alphabetRegex = /[a-z]/gi;
 let result_8 = quoteSample.match(alphabetRegex); 
+
+//Match Numbers and Letters of the Alphabet
+let quoteSample_3 = "Blueberry 3.141592653s are delicious.";
+let myRegex_1 = /[h-s2-6]/gi;
+let result_9 = quoteSample.match(myRegex_1);
+
+// Match Single Characters Not Specified
+let quoteSample = "3 blind mice.";
+let myRegex_2 = /[^0-9aeiou]/gi;
+let result_10 = quoteSample.match(myRegex_2);
+
+
+//Match Characters that Occur One or More Times
+let difficultSpelling = "Mississippi";
+let myRegex_3 = /s+/g;
+let result_11 = difficultSpelling.match(myRegex_3);
+
+
+//Match Characters that Occur Zero or More Times
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+let result_12 = chewieQuote.match(chewieRegex);
