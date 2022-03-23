@@ -43,5 +43,10 @@ let result_7 = quoteSample.match(vowelRegex);
 
 // Match Letters of the Alphabet
 let quoteSample_2 = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi; // Change this line
+let alphabetRegex = /[a-z]/gi;
 let result_8 = quoteSample.match(alphabetRegex); 
+
+//Match Numbers and Letters of the Alphabet
+let quoteSample_3 = "Blueberry 3.141592653s are delicious.";
+let myRegex_1 = /[h-s2-6]/gi;
+let result_9 = quoteSample.match(myRegex_1);
