@@ -61,3 +61,9 @@ let result_10 = quoteSample.match(myRegex_2);
 let difficultSpelling = "Mississippi";
 let myRegex_3 = /s+/g;
 let result_11 = difficultSpelling.match(myRegex_3);
+
+
+//Match Characters that Occur Zero or More Times
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+let result_12 = chewieQuote.match(chewieRegex);
